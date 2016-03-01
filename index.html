@@ -12,15 +12,18 @@
 </head>
 
 <body ng-app="myApp">
-    <div class="header">
+    <div class="header" ng-controller="MainController">
         <div class="container">
-            <h1>Book End</h1>
-        </div>
-    </div>
-    <div class="main" ng-controller="MainController">
-        <div class="container">
-            <h1>{{title}}</h1>
-            <h2>{{promo}}</h2>
+            <h1>{{ title }}</h1>
+            <h2>{{ promo }}</h2>
+            <div class="col-md-6">
+                <div class="thumbnail">
+                    <img src="img/the-book-of-trees.jpg">
+                    <p class="title">{{product.name}}</p>
+                    <p class="price">{{product.price}}</p>
+                    <p class="date"> </p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">
